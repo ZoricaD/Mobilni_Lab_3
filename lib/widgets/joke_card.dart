@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import '../screens/joke_type_screen.dart';
 import '../theme.dart'; // За користење на темата
+
 class JokeCard extends StatelessWidget {
   final String type;
-  const JokeCard({super.key, required this.type});
+  final Function(String) onFavorite;  // Функција за додавање/отстранување омилена шега
+  const JokeCard({super.key, required this.type, required this.onFavorite});
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -40,6 +43,17 @@ class JokeCard extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: AppTheme.textColor,
                 ),
+              ),
+              const SizedBox(height: 15),
+              IconButton(
+                icon: Icon(
+                  Icons.favorite_border,  // Копче за омилена шега
+                  color: AppTheme.primaryColor,
+                  size: 30,
+                ),
+                onPressed: () {
+                  onFavorite(type);  // Повикај ја функцијата за додавање/отстранување омилена шега
+                },
               ),
             ],
           ),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "188115661111",
+    "project_id": "zorica-lab2",
+    "storage_bucket": "zorica-lab2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188115661111:android:a998f031cb23dbc7526ab2",
+        "android_client_info": {
+          "package_name": "com.example.zorica_lab2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfVj8MI9k0whzwoEk-XZ5tvjZYK2KsbX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
